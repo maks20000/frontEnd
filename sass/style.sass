@@ -1,0 +1,541 @@
+$text-red: #FF3754
+    
+body
+    font-family: 'Museo Sans Cyrl 300'
+
+.bold 
+    font-weight: bold
+    color: #000
+
+header
+    height: 960px
+    background: url('../img/header.jpg') no-repeat center top
+    nav
+        width: 100%
+        position: fixed
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        height: 110px
+        padding-right: 85px
+        padding-left: 80px
+        z-index: 100
+
+        .logo
+            height: 58px
+            flex-grow: 1
+
+            .black
+                display: none
+
+
+        .phone
+            position: relative
+            font-family: 'Museo Sans Cyrl 700'
+            color: #fff
+            font-size: 24px
+            &:before
+                position: absolute
+                left: -41px
+                top: 5px
+                content: ""
+                width: 24px
+                height: 24px
+                background: url('../icons/phone.svg') no-repeat center center
+
+        .social
+            display: flex
+            width: 96px
+            justify-content: space-between
+            margin-left: 42px
+
+        .menu 
+            margin-left: 56px
+            height: 50px
+            width: 50px
+            position: relative
+            span
+                position: absolute
+                width: 50px
+                height: 2px
+                background-color: #fff
+            .s1
+                top: 18px
+            .s2
+                top: 30px
+
+            .toggle1 
+                transform: rotate(45deg)
+                top: 50%
+            .toggle2
+                transform: rotate(-45deg)
+                top: 50%
+                    
+    .nav-menu 
+        width: 100%
+        height: 100vh
+        background-color: #ffffff
+        opacity: 0.8
+        display: none
+        flex-direction: column
+        align-items: center
+        position: fixed
+        z-index: 99
+        padding-top: 110px
+    .nav-visible
+        display: flex
+        z-index: 99
+        .phone
+            display: none
+        ul
+            list-style: none
+            li
+                margin-top: 25px
+                a
+                    font-family: 'Museo Sans Cyrl 700'
+                    font-size: 50px
+                    line-height: 60px
+                    text-align: center
+                    color: #303030
+           
+    .head-text
+        padding-top: 165px
+        padding-left: 80px
+        h1
+            font-family: Bebas Neue
+            font-size: 90px
+            text-transform: uppercase
+            color: #FFFFFF
+        h2
+            font-family: 'Museo Sans Cyrl 700'
+            font-size: 50px
+            color: #FFFFFF
+            margin-top: 10px
+            span
+                color: $text-red
+        ul
+            list-style: none
+            margin-top: 50px
+            padding-left: 0
+            li
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                font-family: 'Museo Sans Cyrl 700'
+                font-size: 24px
+                margin-bottom: 8px
+                a
+                    color: #fff
+                    margin-left: 52px
+                    &:hover
+                        text-decoration: none
+                        font-size: 36px
+                        background-color: $text-red
+                        padding: 0 10px 0 10px
+                        border-radius: 4px
+                .award
+                    width: 70px
+                    height: 70px
+                .country
+                    width: 50px
+                    height: 50px
+                    margin-left: -15px
+        .header-btn
+            margin-top: 100px
+            color: #fff
+            width: 412px
+            height: 68px
+            display: inline-block
+            padding: 22.5px 0
+            border-radius: 4px
+            text-align: center
+            font-family: 'Museo Sans Cyrl 700'
+            font-size: 19px
+            text-transform: uppercase
+            letter-spacing: 3.15px
+            background-color: $text-red
+
+.block_2
+    padding: 88px
+    font-size: 18px
+    line-height: 160%
+    color: #303030
+    h2
+        text-transform: uppercase
+        font-family: Bebas Neue
+        font-size: 70px
+        line-height: 70px
+        text-align: center
+        color: $text-red
+    .slider
+        margin-top: 60px
+        position: relative
+        border-left: 30px $text-red solid
+        border-right: 30px $text-red solid
+        padding: 0 118px
+
+        .border_slide
+            width: 52px
+            height: 30px
+            background-color: $text-red
+            border: 0px
+        .topleft
+            position: absolute
+            top: 0
+            left: -30px
+        .topright
+            position: absolute
+            top: 0
+            right: -30px
+        .botright
+            position: absolute
+            bottom: 0
+            right: -30px
+        .botleft
+            position: absolute
+            bottom: 0
+            left: -30px
+
+        .slide-item
+            h2 
+                margin-top: 35px
+                text-align: left
+            h3 
+                font-family: Bebas Neue
+                font-size: 40px
+                line-height: 40px
+                text-transform: uppercase
+                color: #888888
+            .subhead 
+                font-family: Museo Sans Cyrl 300
+                font-size: 13px
+                line-height: 16px
+                letter-spacing: 0.155em
+                text-transform: uppercase
+                margin-top: 17px
+
+            ul
+                list-style: none
+                margin-top: 39px
+                margin-bottom: 31px
+                li
+                    position: relative
+                    font-family: 'Museo Sans Cyrl 300'
+                    font-size: 18px
+                    line-height: 160%
+                    &:before
+                        content: ""
+                        display: inline-block
+                        position: absolute
+                        border-radius: 3px
+                        width: 10px
+                        height: 10px
+                        background-color: $text-red
+                        left: -40px
+                        top: 10px
+            .image_elipse
+                min-height: 300px
+                min-width: 300px
+                img
+                    width: 100%
+    .slider-control
+        margin: 0 auto
+        margin-top: 62px
+        width: 176px
+        display: flex
+        justify-content: space-between
+        .a_right
+            width: 30px
+            height: 30px
+            cursor: pointer
+            background: url("../img/a_left-gr.svg") no-repeat center 
+            transform: scaleX(-1)
+            &:hover
+                background: url("../img/a_right_red.svg") no-repeat center 
+                transform: scaleX(1)
+        .a_left
+            width: 30px
+            height: 30px
+            background: url("../img/a_left-gr.svg") no-repeat center 
+            cursor: pointer
+            &:hover
+                background: url("../img/a_right_red.svg") no-repeat center 
+                transform: scaleX(-1)
+        .num_page 
+            font-size: 24px
+            line-height: 29px
+            color: #303030
+            font-weight: bold
+.block_3
+    background: linear-gradient(180deg, #FDF4F4 0%, #ECF3EC 100%)
+    padding: 69px 62px 122px
+    .year
+        display: none
+    h2
+        text-transform: uppercase
+        font-family: Bebas Neue
+        font-size: 70px
+        line-height: 70px
+        text-align: center
+        color: $text-red
+        margin-bottom: 60px
+    .item
+        max-width: 412px
+        img
+            width: 100%
+        .text
+            padding: 26px 3%
+            font-family: Museo Sans Cyrl 300
+            font-size: 18px
+            line-height: 160%
+
+footer
+    display: flex
+    padding: 22px 88px
+    height: 68px
+    justify-content: space-between
+    font-family: 'Museo Sans Cyrl 300'
+    font-size: 18px
+    line-height: 27px
+    color: #303030
+
+@media screen and (max-width: 1200px)
+    .block_2
+        .slider
+            border: 0px
+            .border_slide
+                display: none
+            .slide-item
+                flex-basis: 100%
+                max-width: 100%
+                &:last-child 
+                    order: 0
+                &:first-child
+                    order: 1
+                    h2, h3, .subhead
+                        text-align: center
+
+@media screen and (max-width: 991px)
+    .block_3
+        .item
+            display: block
+            margin: 0 auto
+
+@media screen and (max-width: 897px)
+    header
+        nav 
+            .phone
+                display: none
+            .social
+                display: none
+        .nav-menu
+            flex-direction: column
+            padding-bottom: 30px
+            ul
+                font-size: 24px
+                padding: 0
+                li
+                    a 
+                        font-size: 24px
+            .phone
+                position: relative
+                font-family: 'Museo Sans Cyrl 700'
+                color: #000
+                font-size: 24px
+                display: block
+                &:before
+                    position: absolute
+                    left: -41px
+                    top: 5px
+                    content: ""
+                    width: 24px
+                    height: 24px
+                    background: url('../icons/phone.svg') no-repeat center center
+            .social
+                display: flex
+                width: 96px
+                justify-content: space-between
+                margin-top: 20px
+                margin-left: 42px
+        .head-text
+            padding-left: 50px
+            h1
+                font-size: 60px
+            .header-btn
+                margin-top: 15px
+    .block_2
+        padding: 10px
+        .slider
+            padding: 0
+            .slide-item
+                .image_elipse
+                    min-width: 0
+                    min-height: 0
+                    img
+                        width: 60%
+                        margin: 0 auto
+    .block_3
+        .year   
+            justify-content: center
+            div
+                width: 63px
+                height: 40px
+                background: #FFFFFF
+                border: 1px solid #888888
+                border-radius: 4px
+                margin: 5px
+                padding: 11px 0
+                font-family: 'Museo Sans Cyrl 700'
+                font-size: 13px
+                line-height: 16px
+                text-align: center
+                letter-spacing: 0.155em
+                text-transform: uppercase
+                color: #888888
+                &:hover
+                    background: $text-red
+                    border: 1px solid $text-red
+                    color: #fff
+@media screen and (max-width: 540px)
+    header
+        nav
+            padding-right: 15px
+            padding-left: 15px
+            height: 8%
+            .logo
+                display: flex
+                align-items: center
+                img
+                    width: 40%
+                    min-width: 102px
+        background-size: 186%, auto
+        .nav-menu
+            padding-top: 95px
+        .head-text
+            padding: 18% 10px 0
+            display: flex
+            flex-direction: column
+            height: 100%
+            justify-content: flex-end
+            h1 
+                font-size: 50px
+            h2 
+                font-size: 20px
+                flex-grow: 2
+            ul 
+                order: 3
+                li
+                    font-size: 18px
+                    margin-bottom: 1px
+                    a
+                        margin-left: 8px
+                        color: #303030
+                        &:hover
+                            color: #ffffff
+                            font-size: 22px
+                    .country
+                        margin-left: -12px
+            .header-btn
+                order: 2
+                align-self: center
+                margin-top: 15px
+                width: 90%
+    .block_3
+        padding-left: 10px
+        padding-right: 10px
+        .year
+            display: flex
+
+@media screen and (max-width: 450px)
+    header
+        .head-text
+            ul 
+                flex-grow: 1
+
+@media screen and (max-width: 382px)
+    header
+        .head-text
+            h2
+                flex-grow: 2
+            ul 
+                flex-grow: 2
+                li
+                    font-size: 14px
+                    margin-bottom: 1px
+                    a
+                        margin-left: 0px
+                        color: #303030
+                        &:hover
+                            color: #ffffff
+                            font-size: 18px
+                            padding: 0 5px 0
+    .block_2 h2, .block_3 h2 
+        font-size: 40px
+        margin-bottom: 26px
+
+    .block_2
+        padding-bottom: 65px
+        .slider
+            .slide-item
+                h2
+                    margin-bottom: 0px
+                h3
+                    font-size: 30px
+    
+    .block_3
+        padding-left: 0
+        padding-right: 0
+        padding-bottom: 0px
+        .w
+            padding: 0
+        .item
+            .text
+                font-size: 16px
+    footer
+        padding: 22px 10px
+
+
+@media screen and (max-width: 320px)
+    header
+        height: 785px
+        nav
+            height: 59px
+        .nav-menu
+            padding-top: 80px
+        .head-text
+            padding-top: 125px
+            justify-content: flex-start
+            h2
+                flex-grow: 0
+
+
+.award-icon-1
+    background: url('../icons/award-1.svg') no-repeat center center
+
+.award-icon-2
+    background: url('../icons/award-2.svg') no-repeat center center
+
+.award-icon-3
+    background: url('../icons/award-3.svg') no-repeat center center
+
+.country-rus
+    background: url('../icons/russia.svg') no-repeat center center
+
+.country-eur
+    background: url('../icons/european.svg') no-repeat center center
+
+.country-world
+    background: url('../icons/world.svg') no-repeat center center
+
+.instagram 
+    width: 34px
+    height: 34px
+    background: url('../icons/instagram.svg') no-repeat 
+                
+.vk 
+    width: 34px
+    height: 34px
+    background: url('../icons/vk.svg') no-repeat 
+
+                                
+                    
